@@ -24,7 +24,6 @@ stub.calledWith('world');
 Will produce output:
 
 ```sh
-
 wrong arguments in functionStub
 actual: [
   "hello"
