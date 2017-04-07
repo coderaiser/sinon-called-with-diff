@@ -40,7 +40,7 @@ expected: [
 In old `node.js` environments that not fully supports `es2015`, `sinon-called-with-diff` could be used with:
 
 ```js
-var sinon-called-with-diff = require('sinon-called-with-diff/legacy');
+var diff = require('sinon-called-with-diff/legacy');
 ```
 
 ## License
