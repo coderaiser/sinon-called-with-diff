@@ -35,6 +35,8 @@ test('sinon-called-with-diff: calledWith patched', (t) => {
         _calledWithPatched,
     };
     
+    diff(sn);
+    
     t.equal(stub, sn.stub, 'should not change sinon.stub');
     t.end();
 });
@@ -54,8 +56,8 @@ test('sinon-called-with-diff: calledWith', (t) => {
     t.end();
 });
 
-test('sinon-called-with-diff: calledWith', (t) => {
-    const calledWith = sinon.stub();
+test('sinon-called-with-diff: calledWith: should show the difference', (t) => {
+    const calledWith = sinon.stub()
     const stubFunction = sinon.stub();
     
     stubFunction.calledWith = calledWith;
