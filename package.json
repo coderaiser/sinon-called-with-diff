@@ -41,7 +41,7 @@
     "babel-cli": "^6.1.1",
     "babel-preset-es2015": "^6.0.15",
     "coveralls": "^2.13.0",
-    "eslint": "^3.10.2",
+    "eslint": "^4.0.0",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
     "redrun": "^5.0.1",
