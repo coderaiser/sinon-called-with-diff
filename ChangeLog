@@ -1,0 +1,8 @@
+2017.07.10, v1.0.1
+
+feature:
+- (package) chalk v2.0.1
+- (package) eslint v4.0.0
+- (package) nyc v11.0.2
+- (package) scripts: report
+
