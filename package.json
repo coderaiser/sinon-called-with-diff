@@ -50,6 +50,6 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "chalk": "2.0.1"
+    "chalk": "^2.0.1"
   }
 }
