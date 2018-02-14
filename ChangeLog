@@ -1,3 +1,12 @@
+2018.02.14, v2.0.0
+
+feature:
+- (sinon-called-with-diff) drop support of node.js < 6
+- (sinon-called-with-diff) add ability to not modify sinon
+- (package) sinon v4.0.0
+- (package) coveralls v3.0.0
+
+
 2017.08.14, v1.0.2
 
 fix:
