@@ -1,13 +1,26 @@
 {
     "env": {
+        "es6": true,
         "node": true
     },
     "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
     },
     "rules": {
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "semi": "error",
+        "no-use-before-define": ["error", "nofunc"],
+        'no-process-exit': 0
     },
-  "extends": ["eslint:recommended"]
+    "extends": [
+        "eslint:recommended",
+        "plugin:node/recommended"
+    ],
+    "plugins": [
+        "node"
+    ]
 }

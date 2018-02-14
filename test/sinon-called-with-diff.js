@@ -36,7 +36,7 @@ test('sinon-called-with-diff: calledWith', (t) => {
 });
 
 test('sinon-called-with-diff: calledWith: should show the difference', (t) => {
-    const calledWith = sinon.stub()
+    const calledWith = sinon.stub();
     const stubFunction = sinon.stub();
     
     stubFunction.calledWith = calledWith;

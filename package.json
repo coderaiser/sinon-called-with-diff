@@ -8,18 +8,13 @@
     "coverage": "nyc npm test",
     "lint": "eslint lib test",
     "report": "nyc report --reporter=text-lcov | coveralls",
-    "build": "redrun clean 6to5 legacy:*",
-    "6to5": "babel -d legacy/lib lib",
-    "wisdom": "npm run build",
-    "clean": "rimraf legacy/*",
     "watcher": "nodemon -w test -w lib --exec",
     "watch:test": "npm run watcher -- npm test",
     "watch:lint": "npm run watcher -- 'npm run lint'",
     "watch:tape": "nodemon -w test -w lib --exec tape",
     "watch:coverage:base": "npm run watcher -- nyc npm test",
     "watch:coverage:tape": "npm run watcher -- nyc tape",
-    "watch:coverage": "bin/redrun.js watch:coverage:base",
-    "legacy:index": "echo \"module.exports = require('./lib/sinon-called-with-diff');\" > legacy/index.js"
+    "watch:coverage": "bin/redrun.js watch:coverage:base"
   },
   "repository": {
     "type": "git",
@@ -38,18 +33,19 @@
   },
   "homepage": "https://github.com/coderaiser/sinon-called-with-diff",
   "devDependencies": {
-    "babel-cli": "^6.1.1",
-    "babel-preset-es2015": "^6.0.15",
     "coveralls": "^3.0.0",
     "eslint": "^4.0.0",
+    "eslint-plugin-node": "^6.0.0",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
     "redrun": "^5.0.1",
-    "rimraf": "^2.4.3",
     "sinon": "^4.0.0",
     "tape": "^4.2.0"
   },
   "dependencies": {
     "chalk": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
