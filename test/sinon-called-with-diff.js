@@ -12,39 +12,18 @@ test('sinon-called-with-diff: no arguments', (t) => {
 
 test('sinon-called-with-diff: returns', (t) => {
     const sinon = {};
-    const expected = diff(sinon);
+    const result = diff(sinon);
     
-    t.equal(expected, sinon, 'should return sinon');
-    t.end();
-});
-
-test('sinon-called-with-diff: returns', (t) => {
-    const sinon = {};
-    const expected = diff(sinon);
-    
-    t.equal(expected, sinon, 'should return sinon');
-    t.end();
-});
-
-test('sinon-called-with-diff: calledWith patched', (t) => {
-    const stub = sinon.stub();
-    const _calledWithPatched = true;
-    
-    const sn = {
-        stub,
-        _calledWithPatched,
-    };
-    
-    diff(sn);
-    
-    t.equal(stub, sn.stub, 'should not change sinon.stub');
+    t.ok(typeof result.stub, 'function', 'should override stub');
     t.end();
 });
 
 test('sinon-called-with-diff: calledWith', (t) => {
     const calledWith = sinon.stub();
     const stub = sinon.stub()
-        .returns({calledWith});
+        .returns({
+            calledWith,
+        });
     
     const sn = {
         stub,
@@ -100,6 +79,24 @@ test('sinon-called-with-diff: calledWith: not called', (t) => {
     fn.calledWith('hello');
     
     t.ok(calledWith.calledWith('hello'), 'should call original calledWith');
+    t.end();
+});
+
+test('sinon-called-with-diff: wrong arguments example', (t) => {
+    const fn = sinon.stub();
+    
+    fn('hello');
+    
+    fn.calledWith('world');
+    t.pass('should show the differance');
+    t.end();
+});
+
+test('sinon-called-with-diff: not called example', (t) => {
+    const fn = sinon.stub();
+    
+    fn.calledWith('hello');
+    t.pass('should output that no called');
     t.end();
 });
 

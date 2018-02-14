@@ -1,6 +1,6 @@
 # Sinon called with diff [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
-Patch [sinon](https://sinonjs.org "sinon") to show diff when args are different.
+Add ability to show diff when args are different in [sinon](https://sinonjs.org "sinon").
 
 ## Install
 
