@@ -40,11 +40,11 @@ MIT
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/sinon-called-with-diff.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/sinon-called-with-diff/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/sinon-called-with-diff.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/sinon-called-with-diff.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/sinon-called-with-diff "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/sinon-called-with-diff  "Build Status"
-[DependencyStatusURL]:      https://gemnasium.com/coderaiser/sinon-called-with-diff "Dependency Status"
+[DependencyStatusURL]:      https://david-dm.org/coderaiser/sinon-called-with-diff "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/sinon-called-with-diff?branch=master
