@@ -1,6 +1,6 @@
 {
   "name": "sinon-called-with-diff",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "add diff to calledWith output of sinon",
   "main": "lib/sinon-called-with-diff.js",
   "scripts": {
