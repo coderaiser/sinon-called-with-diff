@@ -43,8 +43,7 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "chalk": "^2.0.1",
-    "try-catch": "^2.0.0"
+    "chalk": "^2.0.1"
   },
   "engines": {
     "node": ">=6.0.0"

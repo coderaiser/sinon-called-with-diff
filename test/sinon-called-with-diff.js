@@ -35,12 +35,50 @@ test('sinon-called-with-diff: calledWith', (t) => {
     t.end();
 });
 
-test('sinon-called-with-diff', (t) => {
-    const fn = sinon.stub();
+test('sinon-called-with-diff: calledWith: should show the difference', (t) => {
+    const calledWith = sinon.stub();
+    const stubFunction = sinon.stub();
+    
+    stubFunction.calledWith = calledWith;
+    
+    const stub = sinon.stub()
+        .returns(stubFunction);
+    
+    const sn = {
+        stub,
+    };
+    
+    diff(sn);
+    
+    const fn = sn.stub();
     
     fn('hello');
+    fn.calledWith('hello');
     
-    t.ok(fn.calledWith('hello'), 'should return true');
+    t.ok(calledWith.calledWith('hello'), 'should call original calledWith');
+    t.end();
+});
+
+test('sinon-called-with-diff: calledWith: not called', (t) => {
+    const calledWith = sinon.stub();
+    const stubFunction = sinon.stub();
+    
+    stubFunction.calledWith = calledWith;
+    
+    const stub = sinon.stub()
+        .returns(stubFunction);
+    
+    const sn = {
+        stub,
+    };
+    
+    diff(sn);
+    
+    const fn = sn.stub();
+    
+    fn.calledWith('hello');
+    
+    t.ok(calledWith.calledWith('hello'), 'should call original calledWith');
     t.end();
 });
 
