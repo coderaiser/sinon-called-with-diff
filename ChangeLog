@@ -1,3 +1,9 @@
+2018.05.11, v2.1.0
+
+feature:
+- (sinon-called-with-diff) add ability to show diff when no args passed
+
+
 2018.05.03, v2.0.1
 
 fix:
