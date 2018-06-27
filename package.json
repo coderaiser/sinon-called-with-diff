@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "chalk": "^2.0.1",
-    "fast-deep-equal": "^2.0.1"
+    "deep-equal": "^1.0.1"
   },
   "engines": {
     "node": ">=6.0.0"
