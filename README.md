@@ -19,6 +19,8 @@ const stub = sinon.stub();
 stub('hello');
 
 stub.calledWith('world');
+// returns
+false
 ```
 
 Will produce output:
