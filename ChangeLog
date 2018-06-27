@@ -1,3 +1,15 @@
+2018.06.27, v2.1.2
+
+fix:
+- (package) partial arguments equal
+- (sinon-called-with-diff) pop -> args.length - 1
+
+feature:
+- (package) nyc v12.0.2
+- (package) eslint v5.0.0
+- (package) sinon v6.0.0
+
+
 2018.05.11, v2.1.1
 
 fix:
