@@ -87,16 +87,22 @@ test('sinon-called-with-diff: wrong arguments example', (t) => {
     
     fn('hello');
     
-    fn.calledWith('world');
-    t.pass('should show the differance');
+    t.notOk(fn.calledWith('world'), 'should show the differance');
     t.end();
 });
 
 test('sinon-called-with-diff: not called example', (t) => {
     const fn = sinon.stub();
     
-    fn.calledWith('hello');
-    t.pass('should output that no called');
+    t.notOk(fn.calledWith('hello'), 'should output that no called');
     t.end();
 });
 
+test('sinon-called-with-diff: a couple arguments example', (t) => {
+    const fn = sinon.stub();
+    
+    fn('hello', 'world');
+    
+    t.notOk(fn.calledWith('hello'), 'should show diff when not all args equal');
+    t.end();
+});
