@@ -91,6 +91,16 @@ test('sinon-called-with-diff: wrong arguments example', (t) => {
     t.end();
 });
 
+test('sinon-called-with-diff: funcs', (t) => {
+    const fn = sinon.stub();
+    const noop = () => {};
+    
+    fn(1, () => {});
+    
+    t.ok(fn.calledWith(1, noop), 'should equal');
+    t.end();
+});
+
 test('sinon-called-with-diff: not called example', (t) => {
     const fn = sinon.stub();
     
