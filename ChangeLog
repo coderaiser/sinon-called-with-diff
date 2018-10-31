@@ -1,3 +1,14 @@
+2018.10.31, v2.2.2
+
+fix:
+- (sinon-called-with-diff) rm console.log
+
+feature:
+- (package) sinon v7.1.0
+- (package) eslint-plugin-node v8.0.0
+- (package) redrun v7.0.0
+
+
 2018.09.24, v2.2.1
 
 fix:
