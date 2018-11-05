@@ -43,11 +43,11 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "chalk": "^2.0.1",
-    "deep-equal": "^1.0.1",
-    "json5": "^2.0.1"
+    "chalk": "^2.4.1",
+    "jest-diff": "^23.6.0",
+    "strip-ansi": "^5.0.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.3.0"
   }
 }

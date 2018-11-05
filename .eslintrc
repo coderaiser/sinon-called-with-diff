@@ -5,13 +5,13 @@
     },
     "parserOptions": {
         "ecmaVersion": 2018,
-        "sourceType": "module",
     },
     "rules": {
         "indent": ["error", 4],
         "semi": "error",
         "no-use-before-define": ["error", "nofunc"],
-        'no-process-exit': 0
+        "no-process-exit": 0,
+        "no-console": 0,
     },
     "extends": [
         "eslint:recommended",

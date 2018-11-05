@@ -95,7 +95,7 @@ test('sinon-called-with-diff: funcs', (t) => {
     const fn = sinon.stub();
     const noop = () => {};
     
-    fn(1, () => {});
+    fn(1, noop);
     
     t.ok(fn.calledWith(1, noop), 'should equal');
     t.end();
