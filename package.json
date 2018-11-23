@@ -43,9 +43,7 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
-    "jest-diff": "^23.6.0",
-    "strip-ansi": "^5.0.0"
+    "@cloudcmd/stub": "^1.0.0"
   },
   "engines": {
     "node": ">=8.3.0"
