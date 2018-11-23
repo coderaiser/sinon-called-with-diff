@@ -1,6 +1,7 @@
 # Sinon called with diff [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 Add ability to show diff when args are different in [sinon](https://sinonjs.org "sinon").
+You can also replace `sinon` with [stub](https://github.com/cloudcmd/stub) wich is drop-in replacement of `sinon.stub()` with diff support.
 
 ## Install
 
